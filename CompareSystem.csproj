@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26FC4FC4-5D38-46AA-903D-39A3F6522BAA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CompareSystem</RootNamespace>
+    <AssemblyName>CompareSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="skybound.visualstyles">
+      <HintPath>..\..\TriStateTreeView\skybound.visualstyles.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContentManager\contentData.cs" />
+    <Compile Include="ContentManager\contentParam.cs" />
+    <Compile Include="DBManager\fileProject.cs" />
+    <Compile Include="ContentManager\DgData.cs" />
+    <Compile Include="ContentManager\InfoDetail.cs" />
+    <Compile Include="ContentManager\stringCombine.cs" />
+    <Compile Include="IntefaceManager\loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\loading.Designer.cs">
+      <DependentUpon>loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\openProject_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\openProject_Form.Designer.cs">
+      <DependentUpon>openProject_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\parameterSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\parameterSet.Designer.cs">
+      <DependentUpon>parameterSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\wavInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\wavInfo.Designer.cs">
+      <DependentUpon>wavInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\fileBrowse.cs" />
+    <Compile Include="SystemManager\folderBrowse.cs" />
+    <Compile Include="DBManager\fileManage.cs" />
+    <Compile Include="IntefaceManager\alManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\alManage.Designer.cs">
+      <DependentUpon>alManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\nameCompareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\nameCompareForm.Designer.cs">
+      <DependentUpon>nameCompareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\newCompare_algorithm_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\newCompare_algorithm_Form.Designer.cs">
+      <DependentUpon>newCompare_algorithm_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\newCompare_profile_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\newCompare_profile_Form.Designer.cs">
+      <DependentUpon>newCompare_profile_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\newCompare_save_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\newCompare_save_Form.Designer.cs">
+      <DependentUpon>newCompare_save_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\newCompare_test_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\newCompare_test_Form.Designer.cs">
+      <DependentUpon>newCompare_test_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\newCompare_traing_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\newCompare_traing_Form.Designer.cs">
+      <DependentUpon>newCompare_traing_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\setting.Designer.cs">
+      <DependentUpon>setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntefaceManager\trManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntefaceManager\trManage.Designer.cs">
+      <DependentUpon>trManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemManager\processData.cs" />
+    <Compile Include="SystemManager\spListPath.cs" />
+    <Compile Include="SystemManager\splitWord.cs" />
+    <Compile Include="SystemManager\TriStateTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="IntefaceManager\alManage.resx">
+      <DependentUpon>alManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\loading.resx">
+      <DependentUpon>loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\nameCompareForm.resx">
+      <DependentUpon>nameCompareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\newCompare_algorithm_Form.resx">
+      <DependentUpon>newCompare_algorithm_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\newCompare_profile_Form.resx">
+      <DependentUpon>newCompare_profile_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\newCompare_save_Form.resx">
+      <DependentUpon>newCompare_save_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\newCompare_test_Form.resx">
+      <DependentUpon>newCompare_test_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\newCompare_traing_Form.resx">
+      <DependentUpon>newCompare_traing_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\openProject_Form.resx">
+      <DependentUpon>openProject_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\parameterSet.resx">
+      <DependentUpon>parameterSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\setting.resx">
+      <DependentUpon>setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\trManage.resx">
+      <DependentUpon>trManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntefaceManager\wavInfo.resx">
+      <DependentUpon>wavInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SystemManager\TriStateTreeView.resx">
+      <DependentUpon>TriStateTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <COMReference Include="MLApp">
+      <Guid>{C36E46AB-6A81-457B-9F91-A7719A06287F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
